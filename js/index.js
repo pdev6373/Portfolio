@@ -9,7 +9,6 @@ import ContactMain from "./ContactMain.js";
 import PathNames from "./PathNames.js";
 import CreateElements from "./CreateElements.js";
 import ScrollToView from "./ScrollToView.js";
-// import Overlay from "./overlay.js";
 import MoblieNav from "./MoblieNav.js";
 
 (function Base() {
@@ -25,7 +24,7 @@ import MoblieNav from "./MoblieNav.js";
   let isScreenLarge = largeScreen() ? true : false;
 
   function initialPage(path) {
-    const pages = ["", "projects", "skills", "contact"];
+    const pages = ["index", "projects", "skills", "contact"];
     return pages.find((page) => path.includes(page));
   }
 
@@ -78,38 +77,44 @@ import MoblieNav from "./MoblieNav.js";
 
   function previousPageAndLink(array, className) {
     window.addEventListener("popstate", () => {
-      array.forEach((btn) => {
-        btn.classList.remove(className);
+      // array.forEach((btn) => {
+      //   btn.classList.remove(className);
 
-        `/${pageLinkText(btn.textContent.trim())}.html` == location.pathname &&
-          btn.classList.add(className);
-      });
+      //   if (btn.textContent.trim() != "home") {
+      //     `/${pageLinkText(btn.textContent.trim())}.html` ==
+      //       location.pathname && btn.classList.add(className);
+      //   } else {
+      //     "/" == location.pathname && btn.classList.add(className);
+      //   }
+      // });
 
-      let previousButtonIndex = previousBtnIndex();
+      // let previousButtonIndex = previousBtnIndex();
 
-      if (largeScreen()) {
-        if (previousButtonIndex == currentBtnIndex) return;
-        else {
-          if (previousButtonIndex < currentBtnIndex) {
-            pagesRotate.forEach(
-              (pageRotate, index, array) => (array[index] = pageRotate + 90)
-            );
-          }
+      // if (largeScreen()) {
+      //   if (previousButtonIndex == currentBtnIndex) return;
+      //   else {
+      //     if (previousButtonIndex < currentBtnIndex) {
+      //       pagesRotate.forEach(
+      //         (pageRotate, index, array) => (array[index] = pageRotate + 90)
+      //       );
+      //     }
 
-          if (previousButtonIndex > currentBtnIndex) {
-            pagesRotate.forEach(
-              (pageRotate, index, array) => (array[index] = pageRotate - 90)
-            );
-          }
-        }
+      //     if (previousButtonIndex > currentBtnIndex) {
+      //       pagesRotate.forEach(
+      //         (pageRotate, index, array) => (array[index] = pageRotate - 90)
+      //       );
+      //     }
+      //   }
 
-        setMainContent(true);
-        currentBtnIndex = previousButtonIndex;
-      } else {
-        setTimeout(() => {
-          scrollPage();
-        }, 0);
-      }
+      //   setMainContent(true);
+      //   currentBtnIndex = previousButtonIndex;
+      // } else {
+      //   setTimeout(() => {
+      //     scrollPage();
+      //   }, 0);
+      // }
+
+      history.go(1); // to get better solution later, use react
     });
   }
 

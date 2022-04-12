@@ -28,18 +28,27 @@ export default function SocialLinks() {
     "social-container__links-container__links social-container__links-container__links--github",
     githubIcon
   );
+  githubLink.setAttribute("href", "https://github.com/pdev6373");
+  githubLink.setAttribute("target", "_blank");
 
   const linkedinLink = CreateElements(
     "a",
     "social-container__links-container__links social-container__links-container__links--linkedin",
     linkedinIcon
   );
+  linkedinLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/peter-oluborode"
+  );
+  linkedinLink.setAttribute("target", "_blank");
 
   const whatsappLink = CreateElements(
     "a",
     "social-container__links-container__links social-container__links-container__links--whatsapp",
     whatsappIcon
   );
+  whatsappLink.setAttribute("href", "https://wa.me/08069596373");
+  whatsappLink.setAttribute("target", "_blank");
 
   const linksWrapper = CreateElements(
     "div",

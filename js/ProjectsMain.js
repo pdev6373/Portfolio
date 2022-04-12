@@ -5,39 +5,43 @@ export default function ProjectsMain() {
   let projectDetails = [
     {
       projectsNo: "01",
-      projectsName: "Sport LiveScores",
+      projectsName: "Foodcrib",
       projectsSummary:
-        "Website that show the result of different sports, both the current and past results",
-      projectsImg: "./img/Screenshot(366).png",
+        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out",
+      projectsImg: "./img/project-one.png",
+      github: "https://github.com/pdev6373/Foodcrib",
+      site: "https://foodcrib.netlify.app",
     },
     {
       projectsNo: "02",
-      projectsName: "E-commerce Store",
+      projectsName: "LiveScores",
       projectsSummary:
-        "Website that allows you purchase items you need which also includes delivery services",
-      projectsImg: "./img/Screenshot(368).png",
+        "( Uncompleted project ) Website that show the result of different sports, both the current and past results",
+      projectsImg: "./img/blank.png",
+      // github: "",
+      // site: "#",
     },
-    {
-      projectsNo: "03",
-      projectsName: "Food Website",
-      projectsSummary:
-        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out",
-      projectsImg: "./img/Screenshot(370).png",
-    },
-    {
-      projectsNo: "04",
-      projectsName: "Real Estate",
-      projectsSummary:
-        "Website that allows you rent and purchase your dream home with ease",
-      projectsImg: "./img/Screenshot(368).png",
-    },
-    {
-      projectsNo: "05",
-      projectsName: "Blog",
-      projectsSummary:
-        "Website that teaches in-depth javascript topics that you might have not come across before and prepare you for javascript interviews",
-      projectsImg: "./img/Screenshot(366).png",
-    },
+    // {
+    //   projectsNo: "03",
+    //   projectsName: "E-commerce Store",
+    //   projectsSummary:
+    //     "Website that allows you purchase items you need which also includes delivery services",
+    //   projectsImg: "./img/project-one.png",
+    // },
+    // {
+    //   projectsNo: "04",
+    //   projectsName: "Real Estate",
+    //   projectsSummary:
+    //     "Website that allows you rent and purchase your dream home with ease",
+    //   projectsImg: "./img/project-one.png",
+    // },
+    // {
+    //   projectsNo: "05",
+    //   projectsName: "Blog",
+    //   projectsSummary:
+    //     "Website that teaches in-depth javascript topics that you might have not come across before and prepare you for javascript interviews",
+    //   projectsImg: "./img/Screenshot(366).png",
+    // },
   ];
 
   let detailsLargeView = projectDetails.map((detail, index) => {
@@ -62,9 +66,33 @@ export default function ProjectsMain() {
   });
 
   let imagesLargeView = projectDetails.map((detail) => {
-    let image = CreateElements("img");
+    const buttonGithub = CreateElements(
+      "a",
+      "projects-main__img__button-wrapper__github",
+      "view repo"
+    );
+    detail.github && buttonGithub.setAttribute("href", detail.github);
+    detail.github && buttonGithub.setAttribute("target", "_blank");
+
+    const buttonSite = CreateElements(
+      "a",
+      "projects-main__img__button-wrapper__site",
+      "view site"
+    );
+    detail.site && buttonSite.setAttribute("href", detail.site);
+    detail.site && buttonSite.setAttribute("target", "_blank");
+
+    const buttonWrapper = CreateElements(
+      "div",
+      "projects-main__img__button-wrapper",
+      buttonSite,
+      buttonGithub
+    );
+    const image = CreateElements("img");
+
     image.src = detail.projectsImg;
-    return image;
+    let imgWrapper = CreateElements("div", null, image, buttonWrapper);
+    return imgWrapper;
   });
 
   let imagesWrapperLargeView = CreateElements(
@@ -78,7 +106,7 @@ export default function ProjectsMain() {
     ...detailsLargeView
   );
   let projectsSmallView = projectDetails.map(
-    (project) =>
+    (project, index) =>
       `<div class="projects-main__number-name">
           <div class="projects-main__number-name__number">
             ${project.projectsNo}
@@ -92,7 +120,21 @@ export default function ProjectsMain() {
         <div class="projects-main__summary">
           ${project.projectsSummary}
         </div>
-        <img class="projects-main__image" src=${project.projectsImg} />`
+        <div class="projects-main__img-wrapper">
+          <img class="projects-main__img-wrapper__image" src=${
+            project.projectsImg
+          } />
+          <div class="projects-main__img-wrapper__links">
+          ${
+            index
+              ? `<a class="projects-main__img-wrapper__links__site">view site</a> 
+            <a class="projects-main__img-wrapper__links__github">view repo</a>`
+              : `<a class="projects-main__img-wrapper__links__site" href=${project.site} target="_blank">view site</a> 
+            <a class="projects-main__img-wrapper__links__github" href=${project.github} target="_blank">view repo</a>`
+          }
+          </div>
+        </div>
+        `
   );
   let projectsMainSmallView = CreateElements(
     "div",
@@ -118,6 +160,6 @@ export default function ProjectsMain() {
     imagesWrapperLargeView,
     projectsSmallView
   );
-  
+
   return projectsMain;
 }
