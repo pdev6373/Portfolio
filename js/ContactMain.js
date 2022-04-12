@@ -37,22 +37,28 @@ export default function ContactMain() {
               <span>peterdev@gmail.com</span>
             </p>
 
-            <form class="contact-container__form" action="">
+            <form class="contact-container__form" action="https://formspree.io/f/xpzbyrzr" method="POST">
               <input
+              name='Name'
                 class="contact-container__form__name"
                 type="text"
                 placeholder="Name"
+                required
               />
               <input
+               name='Email'
                 class="contact-container__form__email"
                 type="email"
                 placeholder="Email"
+                required
               />
               <textarea
+              name='Message'
                 class="contact-container__form__message"
                 placeholder="Message"
                 cols="30"
                 rows="1"
+                required
               ></textarea>
 
               <div class="contact-container__form__btn-container">
