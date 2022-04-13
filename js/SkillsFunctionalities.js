@@ -25,9 +25,10 @@ export default function SkillsFunctionalities(wheels) {
     "eleventy",
     "git",
     "github",
-    "gulp",
+    "dev tools",
     "webpack",
-    "graphql",
+    // "gulp",
+    // "graphql",
     "axios",
     "shopify",
   ];

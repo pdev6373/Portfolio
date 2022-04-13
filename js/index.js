@@ -60,11 +60,29 @@ import MoblieNav from "./MoblieNav.js";
       const skills = document.querySelector(".skills-main").offsetTop;
       const contact = document.querySelectorAll(".contact-main")[1].offsetTop;
 
+      let projectsValue;
+      let skillsValue;
+
+      if (window.innerWidth <= 600) {
+        projectsValue = -130;
+        skillsValue = -100;
+      } else if (window.innerWidth <= 730) {
+        projectsValue = -160;
+        skillsValue = -80;
+      } else if (window.innerWidth <= 800) {
+        projectsValue = 50;
+        skillsValue = -72;
+      } else if (window.innerWidth <= 1000) {
+        projectsValue = 200;
+        skillsValue = -40;
+      }
+
       let contentToView = contentToViewIndex();
       if (contentToView == 0) ScrollToView("/", home, -140);
       else if (contentToView == 1)
-        ScrollToView("/projects.html", projects, 300);
-      else if (contentToView == 2) ScrollToView("/skills.html", skills, -40);
+        ScrollToView("/projects.html", projects, projectsValue);
+      else if (contentToView == 2)
+        ScrollToView("/skills.html", skills, skillsValue);
       else if (contentToView == 3) ScrollToView("/contact.html", contact, -145);
     });
   }

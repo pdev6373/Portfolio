@@ -1538,7 +1538,7 @@ PROJECTS
   background: #111313;
 }
 
-@media (max-width: 250px) {
+@media (max-width: 215px) {
   .projects-main .projects-main__wrapper--small .projects-main__number-name {
     display: -webkit-box;
     display: -ms-flexbox;

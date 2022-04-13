@@ -1059,7 +1059,7 @@ PROJECTS
       border-radius: 8px;
       background: $secondary-bg-color-light;
 
-      @media (max-width: 250px) {
+      @media (max-width: 215px) {
         @include flex(column);
       }
 
