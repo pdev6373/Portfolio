@@ -71,7 +71,9 @@ export default function MoblieNav() {
     "Resume"
   );
 
-  const resumeWrapper = CreateElements("div", "nav-resume__button", resume);
+  const resumeWrapper = CreateElements("a", "nav-resume__button", resume);
+  resumeWrapper.setAttribute("href", "./resume/peter.pdf");
+  resumeWrapper.setAttribute("download", "peters-resume");
 
   let movileNav = CreateElements("div", "nav-resume", nav, resumeWrapper);
 

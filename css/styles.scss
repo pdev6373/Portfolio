@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+
 /* ###############
 VARIABLES
 ############### */
@@ -55,11 +57,11 @@ GENERAL
 }
 
 body {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   min-height: 100vh;
   min-width: 150px;
   background: $main-bg-color;
-  color: $main-color; // add scroll icon
+  color: $main-color;
 }
 
 *,
@@ -79,7 +81,7 @@ img {
 button,
 input,
 textarea {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif; // use google fonts
+  font-family: "Mulish", sans-serif;
   font-size: 0.81rem;
   font-weight: 700;
   line-height: 3em;
@@ -170,7 +172,6 @@ HEADER
 .header {
   @include flex(column, space-between);
   position: fixed;
-  // width: 100%;
   width: 144px;
   height: 100vh;
   left: 0;
@@ -179,15 +180,6 @@ HEADER
   background: $secondary-bg-color-light;
   z-index: 1;
   border-right: 2px solid rgb(8, 51, 8);
-
-  // animation: Overlay 1s ease-out 0.2s 1 forwards;
-
-  // @keyframes Overlay {
-  //   to {
-  //     left: calc(-100% + 140px);
-  //     border-right: 2px solid rgb(8, 51, 8);
-  //   }
-  // }
 
   @media (max-width: 1000px) {
     @include flex(row, space-between, center);
@@ -797,7 +789,7 @@ HOME
 
           &__day {
             position: relative;
-            font-weight: bold;
+            font-weight: 700;
             font-size: clamp(4rem, 5.2vw, 5rem);
             color: $main-bg-color;
             text-shadow: -1px 0 $secondary-color, 0 1px rgb(8, 51, 8),
@@ -807,7 +799,7 @@ HOME
               position: absolute;
               right: -2.2em;
               bottom: 1.1em;
-              font-weight: bold;
+              font-weight: 700;
               font-size: 0.95rem;
               color: $secondary-color;
               opacity: 0.7;
@@ -832,7 +824,6 @@ HOME
 
       & > * {
         @media (max-width: 1000px) {
-          // line-height: 2.7em;
           min-width: 155px;
         }
 
@@ -942,7 +933,7 @@ PROJECTS
         }
 
         &__number {
-          font-weight: bold;
+          font-weight: 700;
           font-size: clamp(4rem, 5.5vw, 4.7rem);
           line-height: 1.5;
 
@@ -1024,7 +1015,7 @@ PROJECTS
 
           &__github,
           &__site {
-            font-family: "Mulish", Geneva, Tahoma, sans-serif; // use google fonts
+            font-family: "Mulish", sans-serif;
             font-size: 0.9rem;
             font-weight: 700;
             line-height: 2.5em;
@@ -1064,7 +1055,7 @@ PROJECTS
       }
 
       &__number {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 1.9rem;
 
         color: $main-bg-color;
@@ -1088,7 +1079,7 @@ PROJECTS
       }
 
       &__name {
-        font-weight: bold;
+        font-weight: 700;
         font-size: clamp(1.5rem, 4.5vw, 3rem);
         color: $secondary-color;
 
@@ -1129,7 +1120,7 @@ PROJECTS
 
         &__github,
         &__site {
-          font-family: "Mulish", Geneva, Tahoma, sans-serif; // use google fonts
+          font-family: "Mulish", sans-serif;
           font-size: 0.9rem;
           font-weight: 700;
           line-height: 2.5em;
@@ -1190,7 +1181,7 @@ SKILLS
 
     &__text {
       font-size: clamp(2rem, 2.8vw, 3rem);
-      font-weight: bold;
+      font-weight: 700;
       text-align: center;
       text-transform: uppercase;
       color: $main-bg-color;
@@ -1266,7 +1257,7 @@ SKILLS
         position: absolute;
         top: 50%;
         font-size: clamp(3rem, 3.8vw, 4rem);
-        font-weight: bold;
+        font-weight: 700;
         width: 100%;
         background: rgb(20, 20, 20);
         backface-visibility: hidden;
@@ -1357,7 +1348,7 @@ CONTACT
       }
 
       &__header {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 1.6rem;
         text-align: center;
         word-spacing: 0.14em;
@@ -1424,7 +1415,7 @@ CONTACT
       }
 
       &__get-in-touch {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 1.6rem;
         word-spacing: 0.14em;
         text-align: center;
@@ -1467,7 +1458,7 @@ CONTACT
         & > input {
           flex-grow: 1;
           font-size: 1.1rem;
-          font-weight: normal;
+          font-weight: 400;
           border: none;
           border-bottom: 1px solid $secondary-color;
           border-radius: 5px;
@@ -1479,17 +1470,17 @@ CONTACT
           }
 
           &::placeholder {
-            font-family: "Mulish", Geneva, Tahoma, sans-serif;
+            font-family: "Mulish", sans-serif;
             font-size: 1.1rem;
-            font-weight: normal;
+            font-weight: 400;
             margin-block: 10em;
           }
         }
 
         &__message {
-          font-family: "Mulish", Geneva, Tahoma, sans-serif;
+          font-family: "Mulish", sans-serif;
           font-size: 1.1rem;
-          font-weight: normal;
+          font-weight: 400;
           margin-bottom: 0.5em;
           border: none;
           border-bottom: 1px solid $secondary-color;
@@ -1503,9 +1494,9 @@ CONTACT
           }
 
           &::placeholder {
-            font-family: "Mulish", Geneva, Tahoma, sans-serif;
+            font-family: "Mulish", sans-serif;
             font-size: 1.1rem;
-            font-weight: normal;
+            font-weight: 400;
           }
         }
 

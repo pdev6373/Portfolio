@@ -8,6 +8,7 @@ export default function SkillsFunctionalities(wheels) {
     "bootstrap",
     "materialize",
     "bulma",
+    // "foundation"
   ];
 
   const functionality = [

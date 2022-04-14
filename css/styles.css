@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
 /* ###############
 VARIABLES
 ############### */
@@ -30,7 +31,7 @@ GENERAL
 }
 
 body {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   min-height: 100vh;
   min-width: 150px;
   background: #131212;
@@ -55,7 +56,7 @@ img {
 button,
 input,
 textarea {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.81rem;
   font-weight: 700;
   line-height: 3em;
@@ -1116,7 +1117,7 @@ HOME
 
 .home-main .main-content__summary__availability__date__day {
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   font-size: clamp(4rem, 5.2vw, 5rem);
   color: #131212;
   text-shadow: -1px 0 #54a5aa, 0 1px #083308, 1px 0 #083308, 0 -1px #083308;
@@ -1126,7 +1127,7 @@ HOME
   position: absolute;
   right: -2.2em;
   bottom: 1.1em;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.95rem;
   color: #54a5aa;
   opacity: 0.7;
@@ -1349,7 +1350,7 @@ PROJECTS
 }
 
 .projects-main__wrapper .projects-main__details .projects-main__details-wrapper__number {
-  font-weight: bold;
+  font-weight: 700;
   font-size: clamp(4rem, 5.5vw, 4.7rem);
   line-height: 1.5;
   color: #131212;
@@ -1479,7 +1480,7 @@ PROJECTS
 }
 
 .projects-main__wrapper .projects-main__img div .projects-main__img__button-wrapper__github, .projects-main__wrapper .projects-main__img div .projects-main__img__button-wrapper__site {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 2.5em;
@@ -1557,7 +1558,7 @@ PROJECTS
 }
 
 .projects-main .projects-main__wrapper--small .projects-main__number-name__number {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.9rem;
   color: #131212;
   text-shadow: -1px 0 #54a5aa, 0 1px #083308, 1px 0 #083308, 0 -1px #083308;
@@ -1583,7 +1584,7 @@ PROJECTS
 }
 
 .projects-main .projects-main__wrapper--small .projects-main__number-name__name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: clamp(1.5rem, 4.5vw, 3rem);
   color: #54a5aa;
 }
@@ -1653,7 +1654,7 @@ PROJECTS
 }
 
 .projects-main .projects-main__wrapper--small .projects-main__img-wrapper__links__github, .projects-main .projects-main__wrapper--small .projects-main__img-wrapper__links__site {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 2.5em;
@@ -1740,7 +1741,7 @@ SKILLS
 
 .skills-main .wheel__content__text {
   font-size: clamp(2rem, 2.8vw, 3rem);
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #131212;
@@ -1870,7 +1871,7 @@ SKILLS
   position: absolute;
   top: 50%;
   font-size: clamp(3rem, 3.8vw, 4rem);
-  font-weight: bold;
+  font-weight: 700;
   width: 100%;
   background: #141414;
   -webkit-backface-visibility: hidden;
@@ -2020,7 +2021,7 @@ CONTACT
 }
 
 .contact-main .about-and-contact .about-me__header {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.6rem;
   text-align: center;
   word-spacing: 0.14em;
@@ -2094,7 +2095,7 @@ CONTACT
 }
 
 .contact-main .about-and-contact .contact-container__get-in-touch {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.6rem;
   word-spacing: 0.14em;
   text-align: center;
@@ -2155,7 +2156,7 @@ CONTACT
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   border: none;
   border-bottom: 1px solid #54a5aa;
   border-radius: 5px;
@@ -2170,37 +2171,37 @@ CONTACT
 }
 
 .contact-main .about-and-contact .contact-container__form > input::-webkit-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-block: 10em;
 }
 
 .contact-main .about-and-contact .contact-container__form > input:-ms-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-block: 10em;
 }
 
 .contact-main .about-and-contact .contact-container__form > input::-ms-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-block: 10em;
 }
 
 .contact-main .about-and-contact .contact-container__form > input::placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-block: 10em;
 }
 
 .contact-main .about-and-contact .contact-container__form__message {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 0.5em;
   border: none;
   border-bottom: 1px solid #54a5aa;
@@ -2217,27 +2218,27 @@ CONTACT
 }
 
 .contact-main .about-and-contact .contact-container__form__message::-webkit-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .contact-main .about-and-contact .contact-container__form__message:-ms-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .contact-main .about-and-contact .contact-container__form__message::-ms-input-placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .contact-main .about-and-contact .contact-container__form__message::placeholder {
-  font-family: "Mulish", Geneva, Tahoma, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .contact-main .about-and-contact .contact-container__form__btn-container {
