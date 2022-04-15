@@ -7,7 +7,8 @@ export default function ProjectsMain() {
       projectsNo: "01",
       projectsName: "Foodcrib",
       projectsSummary:
-        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out",
+        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out,",
+      projectsTools: "developed with html, sass and react.",
       projectsImg: "./img/project-one.png",
       github: "https://github.com/pdev6373/Foodcrib",
       site: "https://foodcrib.netlify.app",
@@ -16,7 +17,8 @@ export default function ProjectsMain() {
       projectsNo: "02",
       projectsName: "LiveScores",
       projectsSummary:
-        "( Uncompleted project ) Website that show the result of different sports, both the current and past results",
+        "( Uncompleted project ) Website that show the result of different sports, both the current and past results.",
+      projectsTools: "",
       projectsImg: "./img/blank.png",
       // github: "",
       // site: "#",
@@ -60,6 +62,7 @@ export default function ProjectsMain() {
                 <p class="projects-main__details-wrapper__info__summary">
                   ${detail.projectsSummary}
                 </p>
+                <p class="projects-main__details-wrapper__info__tools">${detail.projectsTools}</p>
               </div>
             `;
     return wrapper;
@@ -119,6 +122,9 @@ export default function ProjectsMain() {
         </div>
         <div class="projects-main__summary">
           ${project.projectsSummary}
+        </div>
+        <div class="projects-main__tools">
+          ${project.projectsTools}
         </div>
         <div class="projects-main__img-wrapper">
           <img class="projects-main__img-wrapper__image" src=${
