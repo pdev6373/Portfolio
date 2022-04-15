@@ -33,8 +33,7 @@ export default function ContactMain() {
             </h2>
             <p class="contact-container__text">
               I'm currently available for job offers, Feel free to drop a mail
-              here to get in touch with me or send an email to
-              <span>peterdev@gmail.com</span>
+              here to get in touch with me on whatsapp via the whatsapp icon.
             </p>
 
             <form class="contact-container__form" action="https://formspree.io/f/xpzbyrzr" method="POST">
@@ -46,7 +45,7 @@ export default function ContactMain() {
                 required
               />
               <input
-               name='Email'
+                name='Email'
                 class="contact-container__form__email"
                 type="email"
                 placeholder="Email"

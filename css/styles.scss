@@ -919,25 +919,23 @@ HOME
     margin: 0;
     width: 85%;
 
-
     &__close {
       position: absolute;
-      top: .3em;
-      right: .1em;
+      top: 0.3em;
+      right: 0.1em;
       z-index: 2;
       background: transparent;
       cursor: pointer;
-      
-      
+
       svg {
         width: 40px;
         transition: fill 0.3s;
         fill: rgba(92, 56, 56, 0.824);
-        
+
         font-size: 21px;
         margin: 0.25em 0.5em;
         padding: 0.3em 0.35em;
-      
+
         @media (max-width: 900px) {
           width: 18px;
         }
@@ -946,7 +944,6 @@ HOME
           fill: rgb(107, 64, 64);
         }
       }
-
     }
 
     .about-me {
@@ -1514,12 +1511,6 @@ CONTACT
         margin-bottom: 3em;
         max-width: 900px;
         color: $secondary-color;
-
-        span {
-          @media (max-width: 210px) {
-            font-size: clamp(0.8rem, 8.8vw, 3.5rem);
-          }
-        }
       }
 
       &__form {
