@@ -417,7 +417,7 @@ import MoblieNav from "./MoblieNav.js";
           currentPageSmallScreen = 0;
           const header = document.querySelector(".header");
           const socialContainer = document.querySelector(".social-container");
-          socialContainer.remove();
+          socialContainer && socialContainer.remove();
           header.remove();
           body.prepend(Header(), SocialLinks());
           let pageIndex = pageInViewIndex();
