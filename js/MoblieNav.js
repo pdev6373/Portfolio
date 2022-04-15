@@ -1,9 +1,10 @@
 import CreateElements from "./CreateElements.js";
+import SocialLinks from "./SocialLinks.js";
 
 function CurrentPage(pathName) {
   return pathName == location.pathname
-    ? "nav-resume__nav__list__items__links nav-resume__nav__list__items__links--current"
-    : "nav-resume__nav__list__items__links";
+    ? "nav-social__nav__list__items__links nav-social__nav__list__items__links--current"
+    : "nav-social__nav__list__items__links";
 }
 
 export default function MoblieNav() {
@@ -11,7 +12,7 @@ export default function MoblieNav() {
 
   const homeListItem = CreateElements(
     "li",
-    "nav-resume__nav__list__items",
+    "nav-social__nav__list__items",
     homeLink
   );
 
@@ -23,7 +24,7 @@ export default function MoblieNav() {
 
   const projectsListItem = CreateElements(
     "li",
-    "nav-resume__nav__list__items",
+    "nav-social__nav__list__items",
     projectsLink
   );
 
@@ -35,7 +36,7 @@ export default function MoblieNav() {
 
   const skillsListItem = CreateElements(
     "li",
-    "nav-resume__nav__list__items",
+    "nav-social__nav__list__items",
     skillsLink
   );
 
@@ -47,35 +48,22 @@ export default function MoblieNav() {
 
   const contactListItem = CreateElements(
     "li",
-    "nav-resume__nav__list__items",
+    "nav-social__nav__list__items",
     contactLink
   );
 
   const list = CreateElements(
     "ul",
-    "nav-resume__nav__list",
+    "nav-social__nav__list",
     homeListItem,
     projectsListItem,
     skillsListItem,
     contactListItem
   );
 
-  const nav = CreateElements("nav", "nav-resume__nav", list);
+  const nav = CreateElements("nav", "nav-social__nav", list);
 
-  const resumeIcon = CreateElements("i", "fas fa-download");
-
-  const resume = CreateElements(
-    "button",
-    "nav-resume__button__resume",
-    resumeIcon,
-    "Resume"
-  );
-
-  const resumeWrapper = CreateElements("a", "nav-resume__button", resume);
-  resumeWrapper.setAttribute("href", "./resume/peter.pdf");
-  resumeWrapper.setAttribute("download", "peters-resume");
-
-  let movileNav = CreateElements("div", "nav-resume", nav, resumeWrapper);
+  let movileNav = CreateElements("div", "nav-social", nav, SocialLinks());
 
   return movileNav;
 }

@@ -343,13 +343,63 @@ HEADER
 /* ###############
 MOBILE NAV
 ############### */
-.nav-resume {
+.nav-social {
   height: 100vh;
-  @include flex(column);
-  gap: 4em;
+
+  .social-container {
+    @media (max-width: 700px) {
+      @include flex(column-reverse);
+      position: fixed;
+      top: auto;
+      bottom: 0;
+
+      &__line {
+        height: 25px;
+
+        @media (max-width: 500px) {
+          height: 20px;
+        }
+
+        @media (max-height: 450px) {
+          height: 15px;
+        }
+      }
+
+      &__links-container {
+        &__links {
+          @media (max-width: 500px) {
+            margin: 0.25em 0.42em;
+            padding: 0.2em 0.3em;
+          }
+        }
+      }
+    }
+
+    @media (max-height: 430px) {
+      display: none;
+    }
+  }
 
   &__nav {
+    position: fixed;
+    top: 140px;
     width: 100%;
+
+    @media (max-height: 500px) {
+      top: 130px;
+    }
+
+    @media (max-height: 450px) {
+      top: 123px;
+    }
+
+    @media (max-height: 430px) {
+      top: 140px;
+    }
+
+    @media (max-height: 400px) {
+      top: 125px;
+    }
 
     &__list {
       @include flex(column);
@@ -374,6 +424,10 @@ MOBILE NAV
           width: 100%;
           background: none;
           color: $main-color;
+
+          @media (max-width: 400px) {
+            font-size: 1.1rem;
+          }
 
           &--current,
           &--current::before,
@@ -406,18 +460,6 @@ MOBILE NAV
       }
     }
   }
-
-  &__button {
-    @include flex();
-
-    &__resume {
-      @include flex();
-      gap: 0.5em;
-      padding-inline: clamp(1rem, 5vw, 4rem);
-      line-height: 2.7;
-      min-width: 160px;
-    }
-  }
 }
 
 /* ###############
@@ -446,20 +488,34 @@ SOCIAl LINKS
       font-size: 21px;
       margin: 0.25em 0.5em;
       padding: 0.3em 0.35em;
-      transition: color 0.3s;
-      color: #4b4747;
       cursor: pointer;
 
-      &--github:hover {
-        color: #666060;
+      svg {
+        width: 19px;
+        transition: fill 0.3s;
+        fill: #4b4747;
+
+        @media (max-width: 900px) {
+          width: 18px;
+        }
       }
 
-      &--linkedin:hover {
-        color: #0e4966;
+      &--github {
+        svg:hover {
+          fill: #666060;
+        }
       }
 
-      &--whatsapp:hover {
-        color: #386b3f;
+      &--linkedin {
+        svg:hover {
+          fill: #0e4966;
+        }
+      }
+
+      &--whatsapp {
+        svg:hover {
+          fill: #386b3f;
+        }
       }
     }
   }

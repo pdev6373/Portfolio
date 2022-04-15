@@ -244,7 +244,7 @@ import MoblieNav from "./MoblieNav.js";
       });
 
     document
-      .querySelectorAll(".nav-resume__nav__list__items__links")
+      .querySelectorAll(".nav-social__nav__list__items__links")
       .forEach((link, linkIndex, array) => {
         link.addEventListener("click", () => {
           pagesRotate.forEach(
@@ -255,7 +255,7 @@ import MoblieNav from "./MoblieNav.js";
             array,
             linkIndex,
             link,
-            "nav-resume__nav__list__items__links--current"
+            "nav-social__nav__list__items__links--current"
           );
 
           currentPageSmallScreen = 0;
@@ -372,8 +372,8 @@ import MoblieNav from "./MoblieNav.js";
           pages[1].append(MoblieNav());
 
           previousPageAndLink(
-            document.querySelectorAll(".nav-resume__nav__list__items__links"),
-            "nav-resume__nav__list__items__links--current"
+            document.querySelectorAll(".nav-social__nav__list__items__links"),
+            "nav-social__nav__list__items__links--current"
           );
 
           scrollPage();
@@ -440,8 +440,8 @@ import MoblieNav from "./MoblieNav.js";
           pages[pageIndex < 3 ? pageIndex + 1 : 0].append(MoblieNav());
 
           previousPageAndLink(
-            document.querySelectorAll(".nav-resume__nav__list__items__links"),
-            "nav-resume__nav__list__items__links--current"
+            document.querySelectorAll(".nav-social__nav__list__items__links"),
+            "nav-social__nav__list__items__links--current"
           );
 
           scrollPage();
