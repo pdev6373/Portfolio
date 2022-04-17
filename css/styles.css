@@ -946,12 +946,6 @@ HOME
   }
 }
 
-@media (max-width: 600px) {
-  .home-main .main-content__what-i-do {
-    font-size: clamp(1rem, 6vw, 5rem);
-  }
-}
-
 @media (max-width: 510px) {
   .home-main .main-content__what-i-do {
     font-size: clamp(2.7rem, 10vw, 5rem);

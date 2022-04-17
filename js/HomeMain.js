@@ -6,13 +6,15 @@ import SocialLinks from "./SocialLinks.js";
 export default function HomeMain() {
   const myName = CreateElements("p", "main-content__my-name", "I'm Peter,");
 
-  const whatiDoSmallView = `I'm A <span>Frontend</span> Developer`;
+  const whatiDoSmallView = `I'm A <span>Frontend</span> Developer😎`;
   const whatiDoLargeView = `I'm A <span>Frontend</span> Developer <br />
-        Ready To Build You Amazing Websites`;
+        Who Loves Building Amazing <br /> User Interfaces😎`;
   const whatIDo = CreateElements("h1", "main-content__what-i-do");
   whatIDo.innerHTML = `${
     window.innerWidth > 510 ? whatiDoLargeView : whatiDoSmallView
   }`;
+
+  //  😎😉😋
 
   const thin = CreateElements(
     "div",

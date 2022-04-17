@@ -692,10 +692,6 @@ HOME
         font-size: clamp(1rem, 5.8vw, 5rem);
       }
 
-      @media (max-width: 600px) {
-        font-size: clamp(1rem, 6vw, 5rem);
-      }
-
       @media (max-width: 510px) {
         font-size: clamp(2.7rem, 10vw, 5rem);
         line-height: 1.1;
