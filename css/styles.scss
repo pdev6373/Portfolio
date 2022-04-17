@@ -872,12 +872,9 @@ HOME
     &__btn-container {
       @include flex();
 
-      @media (max-width: 1000px) {
-        gap: 1em;
-      }
-
       @media (max-width: 400px) {
         @include flex(column, flex-start);
+        gap: 1em;
         margin-inline: auto;
         width: 100%;
       }
@@ -898,13 +895,21 @@ HOME
         }
       }
 
-      &__resume {
+      &__resume-wrapper {
         display: none;
 
         @media (max-width: 1000px) {
           @include flex();
           gap: 0.5em;
-          padding-inline: clamp(1rem, 5vw, 4rem);
+          margin-left: 1em;
+        }
+
+        @media (max-width: 400px) {
+          margin-left: 0;
+        }
+
+        &__resume {
+          width: 100%;
         }
       }
     }

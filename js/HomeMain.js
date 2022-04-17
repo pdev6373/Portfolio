@@ -109,10 +109,18 @@ export default function HomeMain() {
   const buttonResumeIcon = CreateElements("i", "fas fa-download");
   const buttonResume = CreateElements(
     "button",
-    "main-content__btn-container__resume",
+    "main-content__btn-container__resume-wrapper__resume",
     buttonResumeIcon,
     "Resume"
   );
+  const buttonResumeWrapper = CreateElements(
+    "a",
+    "main-content__btn-container__resume-wrapper",
+    buttonResume
+  );
+  buttonResumeWrapper.setAttribute("href", "./resume/peter.pdf");
+  buttonResumeWrapper.setAttribute("download", "peters-resume");
+
   const buttonGetInTouch = CreateElements(
     "button",
     "main-content__btn-container__btn",
@@ -123,7 +131,7 @@ export default function HomeMain() {
     "div",
     "main-content__btn-container",
     buttonGetInTouch,
-    buttonResume
+    buttonResumeWrapper
   );
 
   const cancelIcon = CreateElements("div", "contact-main__close");
