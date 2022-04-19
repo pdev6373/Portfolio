@@ -8,7 +8,7 @@ export default function ProjectsMain() {
       projectsName: "Foodcrib",
       projectsSummary:
         "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out,",
-      projectsTools: "developed with html, sass and react.",
+      projectsTools: "developed with react, and sass.",
       projectsImg: "./img/project-one.png",
       github: "https://github.com/pdev6373/Foodcrib",
       site: "https://foodcrib.netlify.app",
