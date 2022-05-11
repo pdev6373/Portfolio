@@ -352,6 +352,44 @@ import MoblieNav from "./MoblieNav.js";
             );
           } else pages[pageIndex].append(pagesContent[contentIndex]());
 
+          // gsap.from(".header", {
+          //   duration: 1,
+          //   delay: 2,
+          //   x: "-100%",
+          //   ease: "bounce",
+          // }); //////
+          // gsap.from(".social-container", {
+          //   duration: 1,
+          //   delay: 3,
+          //   y: "-100%",
+          //   ease: "sine",
+          // }); //////
+          // gsap.from(".main-content__my-name", {
+          //   duration: 2,
+          //   opacity: 0,
+          // }); ///////
+          // gsap.from(".main-content__what-i-do", {
+          //   duration: 2,
+          //   delay: 0.5,
+          //   opacity: 0,
+          // }); //////
+          // gsap.from(".main-content__summary", {
+          //   duration: 2,
+          //   delay: 1.2,
+          //   opacity: 0,
+          // }); ////////
+          // gsap.from(".main-content__btn-container__btn", {
+          //   duration: 2,
+          //   delay: 1.5,
+          //   opacity: 0,
+          // }); ////////
+          // gsap.from(".main-content__summary__availability", {
+          //   duration: 1,
+          //   delay: 3,
+          //   opacity: 0,
+          //   x: "50%",
+          // }); //////
+
           headerNavLinksClick();
 
           previousPageAndLink(

@@ -838,6 +838,7 @@ HOME
 .home-main {
   padding-top: 120px;
   padding-left: 94px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1150px) {

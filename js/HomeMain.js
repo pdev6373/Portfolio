@@ -14,7 +14,7 @@ export default function HomeMain() {
     window.innerWidth > 510 ? whatiDoLargeView : whatiDoSmallView
   }`;
 
-  //  😎😉😋
+  // 😉😋
 
   const thin = CreateElements(
     "div",

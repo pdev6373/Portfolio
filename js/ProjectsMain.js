@@ -15,9 +15,19 @@ export default function ProjectsMain() {
     },
     {
       projectsNo: "02",
+      projectsName: "Office X",
+      projectsSummary:
+        "Website that allows you Book an empowering workspace for your team",
+      projectsTools: "developed with next.js, sass, and typescript.",
+      projectsImg: "./img/project-two.png",
+      github: "https://github.com/pdev6373/Office-X",
+      site: "https://office-x.vercel.app/",
+    },
+    {
+      projectsNo: "03",
       projectsName: "LiveScores",
       projectsSummary:
-        "( Uncompleted project ) Website that show the result of different sports, both the current and past results.",
+        "Website that show the result of different sports, both the current and past results.",
       projectsTools: "",
       projectsImg: "./img/blank.png",
       // github: "",
