@@ -8,7 +8,6 @@ export default function ProjectsMain() {
       projectsName: "Foodcrib",
       projectsSummary:
         "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out,",
-      projectsTools: "developed with react, and sass.",
       projectsImg: "./img/project-one.png",
       github: "https://github.com/pdev6373/Foodcrib",
       site: "https://foodcrib.netlify.app",
@@ -18,7 +17,6 @@ export default function ProjectsMain() {
       projectsName: "Office X",
       projectsSummary:
         "Website that allows you Book an empowering workspace for your team",
-      projectsTools: "developed with next.js, sass, and typescript.",
       projectsImg: "./img/project-two.png",
       github: "https://github.com/pdev6373/Office-X",
       site: "https://office-x.vercel.app/",
@@ -28,7 +26,6 @@ export default function ProjectsMain() {
       projectsName: "LiveScores",
       projectsSummary:
         "Website that show the result of different sports, both the current and past results.",
-      projectsTools: "",
       projectsImg: "./img/blank.png",
       // github: "",
       // site: "#",
@@ -72,7 +69,6 @@ export default function ProjectsMain() {
                 <p class="projects-main__details-wrapper__info__summary">
                   ${detail.projectsSummary}
                 </p>
-                <p class="projects-main__details-wrapper__info__tools">${detail.projectsTools}</p>
               </div>
             `;
     return wrapper;
@@ -132,9 +128,6 @@ export default function ProjectsMain() {
         </div>
         <div class="projects-main__summary">
           ${project.projectsSummary}
-        </div>
-        <div class="projects-main__tools">
-          ${project.projectsTools}
         </div>
         <div class="projects-main__img-wrapper">
           <img class="projects-main__img-wrapper__image" src=${

@@ -13,6 +13,7 @@ export default function SkillsFunctionalities(wheels) {
 
   const functionality = [
     "javascript",
+    "angular",
     "react",
     "next",
     "gatsby",
