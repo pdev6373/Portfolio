@@ -75,7 +75,7 @@ export default function Header() {
   );
 
   const resumeWrapper = CreateElements("a", "header__button", resume);
-  resumeWrapper.setAttribute("href", "./resume/peter.pdf");
+  resumeWrapper.setAttribute("href", "./resume/peter_resume.pdf");
   resumeWrapper.setAttribute("download", "peters-resume");
 
   const hamburgerLine = CreateElements("div", "header__hamburger__line");

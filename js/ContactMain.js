@@ -11,13 +11,14 @@ export default function ContactMain() {
             <div class="about-me__summary">
               <p class="about-me__summary__text">
                 <span>
-                  I'm Oluborode Peter, A frontend developer who loves
-                  experimenting with frontend technologies and enjoys learning
-                  more about javascript to fully understand it's weird parts.
+                I'm Oluborode Peter, A software developer who loves
+                experimenting with different programming languages and concepts
+                and enjoys solving problems with various technologies and
+                programming tools.
                 </span>
                 <span>
-                  When i'm not coding, i spend my time on the piano and also
-                  study how the forex market works.
+                 When i'm not coding, i spend my time on the piano, and sometimes
+                 creating forex bots.
                 </span>
                 <span>
                   I'm currently available for remote works or freelance
@@ -32,8 +33,8 @@ export default function ContactMain() {
               Lets Build Something Unique
             </h2>
             <p class="contact-container__text">
-              I'm currently available for job offers, Feel free to drop a mail
-              here to get in touch with me on whatsapp via the whatsapp icon.
+            I'm currently available for job offers, Feel free to drop a mail
+            here to get in touch with me or contact me via the whatsapp icon.
             </p>
 
             <form class="contact-container__form" action="https://formspree.io/f/xpzbyrzr" method="POST">

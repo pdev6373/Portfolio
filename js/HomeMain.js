@@ -6,9 +6,9 @@ import SocialLinks from "./SocialLinks.js";
 export default function HomeMain() {
   const myName = CreateElements("p", "main-content__my-name", "I'm Peter,");
 
-  const whatiDoSmallView = `I'm A <span>Frontend</span> Developer😎`;
-  const whatiDoLargeView = `I'm A <span>Frontend</span> Developer <br />
-        Who Loves Building Amazing <br /> User Interfaces😎`;
+  const whatiDoSmallView = `I'm A <span>Software</span> Developer😎`;
+  const whatiDoLargeView = `I'm A <span>Software</span> Developer <br />
+        Who Loves Building Amazing <br /> Products😎`;
   const whatIDo = CreateElements("h1", "main-content__what-i-do");
   whatIDo.innerHTML = `${
     window.innerWidth > 510 ? whatiDoLargeView : whatiDoSmallView
@@ -97,9 +97,10 @@ export default function HomeMain() {
   const summaryText = CreateElements(
     "p",
     "main-content__summary__text",
-    `I love creating websites with great user experience, I would love
-          to help companies build interactive and high performant websites
-          that users would love to be part of`
+    `I love building scalable softwares with great user experience and
+          amazing functionalities, I would love to help companies build
+          interactive and high performant softwares that users would love to be
+          part of.`
   );
   const summary = CreateElements(
     "div",
@@ -120,7 +121,7 @@ export default function HomeMain() {
     "main-content__btn-container__resume-wrapper",
     buttonResume
   );
-  buttonResumeWrapper.setAttribute("href", "./resume/peter.pdf");
+  buttonResumeWrapper.setAttribute("href", "./resume/peter_resume.pdf");
   buttonResumeWrapper.setAttribute("download", "peters-resume");
 
   const buttonGetInTouch = CreateElements(

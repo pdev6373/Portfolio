@@ -1,43 +1,40 @@
 export default function SkillsFunctionalities(wheels) {
-  const stylingAndMarkup = [
-    "html",
-    "css",
-    "sass",
-    "less",
-    "tailwind",
-    "bootstrap",
-    "materialize",
-    "bulma",
-    // "foundation"
+  const programmingLanguages = [
+    "Javascript",
+    "Typescript",
+    "Java",
+    "Dart",
+    "Kotlin",
+    "Python",
+    "Golang",
+    "C#",
   ];
 
-  const functionality = [
-    "javascript",
-    "angular",
-    "react",
-    "next",
-    "gatsby",
-    "redux",
-    "jQuery",
-    "lodash",
-    "underscore",
+  const frameworks = [
+    "CSS/Tailwind",
+    "React/Nextjs",
+    "React Native",
+    "Angular",
+    "Gatsby",
+    "Flutter",
+    "Jetpack Compose",
+    "Node/Express",
   ];
 
   const others = [
-    "eleventy",
-    "git",
-    "github",
-    "dev tools",
-    "webpack",
-    // "gulp",
-    // "graphql",
-    "axios",
-    "shopify",
+    "MongoDB",
+    "MySQL",
+    "Redis",
+    "PostgreSQL",
+    "Git/Github",
+    "Graphql",
+    "Firebase",
+    "Appwrite",
   ];
 
   const skillsGroup = [
-    stylingAndMarkup.reverse(),
-    functionality.reverse(),
+    programmingLanguages.reverse(),
+    frameworks.reverse(),
     others.reverse(),
   ];
 

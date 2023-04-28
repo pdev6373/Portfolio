@@ -1,7 +1,7 @@
 import CreateElements from "./CreateElements.js";
 
 export default function SkillsMain() {
-  const groups = ["Markup and Styling", "Functionality", "Others"];
+  const groups = ["Programmong Languages", "Frameworks", "Others"];
 
   const skillsMain = groups.map((group) => {
     const text = CreateElements("div", "wheel__content__text", group);
