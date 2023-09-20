@@ -5,52 +5,31 @@ export default function ProjectsMain() {
   let projectDetails = [
     {
       projectsNo: "01",
+      projectsName: "Goalrush",
+      projectsSummary:
+        "A website that keeps you updated with live football scores and goals from around the world. Stay in the game with ease!",
+      projectsImg: "./img/goalrush.png",
+      github: "https://github.com/pdev6373/goalrush",
+      site: "https://goal-rush.vercel.app",
+    },
+    {
+      projectsNo: "02",
       projectsName: "Foodcrib",
       projectsSummary:
         "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out.",
-      projectsImg: "./img/project-one.png",
+      projectsImg: "./img/foodcrib.png",
       github: "https://github.com/pdev6373/Foodcrib",
       site: "https://foodcrib.netlify.app",
     },
     {
-      projectsNo: "02",
-      projectsName: "Amazon Clone",
-      projectsSummary:
-        "Website that allows you order different products online with easy delivery.",
-      projectsImg: "./img/amazon_clone.png",
-      github: "https://github.com/pdev6373/amazon_clone_frontend",
-      site: "https://amazon--clone.vercel.app",
-    },
-    {
       projectsNo: "03",
-      projectsName: "Office X",
+      projectsName: "Stackbuld",
       projectsSummary:
-        "Website that allows you Book an empowering workspace for your team.",
-      projectsImg: "./img/project-two.png",
-      github: "https://github.com/pdev6373/Office-X",
-      site: "https://office-x.vercel.app/",
+        "A premier agency that specialize in building websites for businesses and individuals so as to bring them to life",
+      projectsImg: "./img/stackbuld.png",
+      github: "",
+      site: "https://www.stackbuld.com/",
     },
-    // {
-    //   projectsNo: "03",
-    //   projectsName: "E-commerce Store",
-    //   projectsSummary:
-    //     "Website that allows you purchase items you need which also includes delivery services",
-    //   projectsImg: "./img/project-one.png",
-    // },
-    // {
-    //   projectsNo: "04",
-    //   projectsName: "Real Estate",
-    //   projectsSummary:
-    //     "Website that allows you rent and purchase your dream home with ease",
-    //   projectsImg: "./img/project-one.png",
-    // },
-    // {
-    //   projectsNo: "05",
-    //   projectsName: "Blog",
-    //   projectsSummary:
-    //     "Website that teaches in-depth javascript topics that you might have not come across before and prepare you for javascript interviews",
-    //   projectsImg: "./img/Screenshot(366).png",
-    // },
   ];
 
   let detailsLargeView = projectDetails.map((detail, index) => {
