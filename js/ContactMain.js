@@ -6,7 +6,7 @@ export default function ContactMain() {
           <section class="about-me">
             <div class="about-me__header">About Me</div>
             <div class="about-me__skills">
-              Interactive Frontend Web Developer
+              Interactive Software Web Developer
             </div>
             <div class="about-me__summary">
               <p class="about-me__summary__text">
