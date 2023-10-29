@@ -5,6 +5,15 @@ export default function ProjectsMain() {
   let projectDetails = [
     {
       projectsNo: "01",
+      projectsName: "Meetmax",
+      projectsSummary:
+        "A website that fosters online connections and community engagement through interactive features and user-friendly interfaces.",
+      projectsImg: "./img/meetmax.png",
+      github: "https://github.com/pdev6373/meetmax",
+      site: "https://meetmax-social.vercel.app",
+    },
+    {
+      projectsNo: "02",
       projectsName: "Goalrush",
       projectsSummary:
         "A website that keeps you updated with live football scores and goals from around the world. Stay in the game with ease!",
@@ -13,7 +22,7 @@ export default function ProjectsMain() {
       site: "https://goal-rush.vercel.app",
     },
     {
-      projectsNo: "02",
+      projectsNo: "03",
       projectsName: "Foodcrib",
       projectsSummary:
         "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out.",
