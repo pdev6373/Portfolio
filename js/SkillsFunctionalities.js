@@ -12,24 +12,24 @@ export default function SkillsFunctionalities(wheels) {
 
   const frameworks = [
     "CSS/Tailwind",
-    "React/Nextjs",
+    "React",
+    "Next.js",
     "React Native",
     "Angular",
-    "Gatsby",
     "Flutter",
-    "Jetpack Compose",
-    "Node/Express",
+    "Express",
+    "Nest.js",
   ];
 
   const others = [
     "MongoDB",
     "MySQL",
-    "Redis",
     "PostgreSQL",
+    "Redis",
     "Git/Github",
     "Graphql",
-    "Firebase",
-    "Appwrite",
+    "Supabase",
+    "Docker",
   ];
 
   const skillsGroup = [

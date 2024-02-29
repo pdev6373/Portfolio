@@ -118,17 +118,10 @@ export default function ProjectsMain() {
           ${project.projectsSummary}
         </div>
         <div class="projects-main__img-wrapper">
-          <img class="projects-main__img-wrapper__image" src=${
-            project.projectsImg
-          } />
+          <img class="projects-main__img-wrapper__image" src=${project.projectsImg} />
           <div class="projects-main__img-wrapper__links">
-          ${
-            index
-              ? `<a class="projects-main__img-wrapper__links__site">view site</a> 
-            <a class="projects-main__img-wrapper__links__github">view repo</a>`
-              : `<a class="projects-main__img-wrapper__links__site" href=${project.site} target="_blank">view site</a> 
-            <a class="projects-main__img-wrapper__links__github" href=${project.github} target="_blank">view repo</a>`
-          }
+          <a class="projects-main__img-wrapper__links__site" href=${project.site} target="_blank">view site</a> 
+          <a class="projects-main__img-wrapper__links__github" href=${project.github} target="_blank">view repo</a>
           </div>
         </div>
         `
