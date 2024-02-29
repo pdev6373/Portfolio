@@ -23,21 +23,21 @@ export default function ProjectsMain() {
     },
     {
       projectsNo: "03",
-      projectsName: "Foodcrib",
-      projectsSummary:
-        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out.",
-      projectsImg: "./img/foodcrib.png",
-      github: "https://github.com/pdev6373/Foodcrib",
-      site: "https://foodcrib.netlify.app",
-    },
-    {
-      projectsNo: "04",
       projectsName: "Stackbuld",
       projectsSummary:
         "A premier agency that specialize in building websites for businesses and individuals so as to bring them to life",
       projectsImg: "./img/stackbuld.png",
       github: "",
       site: "https://www.stackbuld.com/",
+    },
+    {
+      projectsNo: "04",
+      projectsName: "Foodcrib",
+      projectsSummary:
+        "Website that allows you order your favorite foods and browse through other amazing foods you might like to try out.",
+      projectsImg: "./img/foodcrib.png",
+      github: "https://github.com/pdev6373/Foodcrib",
+      site: "https://foodcrib.netlify.app",
     },
   ];
 
