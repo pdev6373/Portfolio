@@ -1,5 +1,7 @@
 import CreateElements from "./CreateElements.js";
 
+// I started programming mid 2021 as an hobby.
+
 export default function ContactMain() {
   const contactMain = CreateElements("div", "about-and-contact");
   contactMain.innerHTML = `
@@ -14,7 +16,7 @@ export default function ContactMain() {
                 I'm Oluborode Peter, A software developer who loves
                 experimenting with different programming languages and concepts
                 and enjoys solving problems with various technologies and
-                programming tools. I started programming mid 2021 as an hobby.
+                programming tools.
                 </span>
                 <span>
                  When i'm not coding, i spend my time on the piano, and sometimes
